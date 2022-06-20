@@ -1,13 +1,13 @@
 {
-    "poolHost": "zano.somewhere.com",
+    "poolHost": "pool.4privacy.click",
 
-    "coin": "Zano",
-    "symbol": "ZANO",
+    "coin": "Evox",
+    "symbol": "EvoX",
     "coinUnits": 1000000000000,
     "coinDecimalPlaces": 4,
     "coinDifficultyTarget": 120,
-    "blockchainExplorer": "https://explorer.zano.org/block/{id}",
-    "transactionExplorer": "https://explorer.zano.org/transaction/{id}",
+    "blockchainExplorer": "https://chain.evolution-network.org/block/{id}",
+    "transactionExplorer": "https://chain.evolution-network.org/transaction/{id}",
 
     "daemonType": "default",
     "cnAlgorithm": "ethash",
@@ -25,7 +25,7 @@
             "level": "info",
             "directory": "logs",
             "flushInterval": 5,
-            "prefix": "Zano"
+            "prefix": "evox-pool-log"
         },
         "console": {
             "level": "info",
@@ -37,7 +37,7 @@
         "enabled": true,
         "mergedMining": false,
         "clusterForks": 3,
-        "poolAddress": "** pool wallet **",
+        "poolAddress": "eX5JnYQXxpLHoDxdLKmuoSEkNK98W7q8fVQ6gLQ46tA14nTZXxANM5D29FXWdxYgDsBybtzMv756tNeHXwm9rv2d2jBL2L8KG",
         "intAddressPrefix": null,
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
@@ -46,17 +46,17 @@
         "sslCA": "chain.pem",
         "ports": [
             {
-                "port": 3336,
+                "port": 52600,
                 "difficulty": 50000000,
                 "desc": "Low end hardware"
             },
             {
-                "port": 3337,
+                "port": 52601,
                 "difficulty": 600000000,
                 "desc": "middle end hardware"
             },
             {
-                "port": 3338,
+                "port": 52602,
                 "difficulty": 5000000000,
                 "desc": "Nicehash, MRR"
             }
@@ -101,7 +101,7 @@
         "enabled": true,
         "interval": 900,
         "maxAddresses": 5,
-        "mixin": 10,
+        "mixin": 0,
         "priority": 0,
         "transferFee": 10000000000,
         "dynamicTransferFee": true,
@@ -116,9 +116,9 @@
         "enabled": true,
         "interval": 60,
         "depth": 10,
-        "poolFee": 0.2,
-        "soloFee": 0.2,
-        "devDonation": 0.5,
+        "poolFee": 1,
+        "soloFee": 1,
+        "devDonation": 0.2,
         "networkFee": 0.0
     },
 
@@ -127,12 +127,12 @@
         "hashrateWindow": 600,
         "updateInterval": 15,
         "bindIp": "0.0.0.0",
-        "port": 2117,
+        "port": 8118,
         "blocks": 30,
         "payments": 30,
-        "password": "password",
+        "password": "adminpassword",
         "ssl": false,
-        "sslPort": 2119,
+        "sslPort": 8228,
         "sslCert": "cert.pem",
         "sslKey": "privkey.pem",
         "sslCA": "chain.pem",
@@ -142,24 +142,24 @@
    "zmq": {
         "enabled": false,
         "host": "127.0.0.1",
-        "port": 39995
+        "port": null
     },
 
     "daemon": {
         "host": "127.0.0.1",
-        "port": 11211
+        "port": 52520
     },
 
     "wallet": {
         "host": "127.0.0.1",
-        "port": 39996
+        "port": 52052
     },
 
     "redis": {
         "host": "127.0.0.1",
         "port": 6379,
         "auth": null,
-        "db": 11,
+        "db": 5,
         "cleanupInterval": 15
     },
 
@@ -276,19 +276,19 @@
             },
             "difficulty": {
                 "enabled": true,
-                "updateInterval": 1800,
+                "updateInterval": 180,
                 "stepInterval": 10800,
                 "maximumPeriod": 604800
             },
             "price": {
                 "enabled": true,
-                "updateInterval": 1800,
+                "updateInterval": 180,
                 "stepInterval": 10800,
                 "maximumPeriod": 604800
             },
             "profit": {
                 "enabled": true,
-                "updateInterval": 1800,
+                "updateInterval": 180,
                 "stepInterval": 10800,
                 "maximumPeriod": 604800
             }
