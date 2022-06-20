@@ -1,7 +1,7 @@
 {
     "poolHost": "pool.4privacy.click",
 
-    "coin": "Evox",
+    "coin": "evox",
     "symbol": "EvoX",
     "coinUnits": 1000000000000,
     "coinDecimalPlaces": 4,
@@ -99,7 +99,7 @@
 
     "payments": {
         "enabled": true,
-        "interval": 900,
+        "interval": 60,
         "maxAddresses": 5,
         "mixin": 0,
         "priority": 0,
@@ -147,7 +147,7 @@
 
     "daemon": {
         "host": "127.0.0.1",
-        "port": 52520
+        "port": 52521
     },
 
     "wallet": {
